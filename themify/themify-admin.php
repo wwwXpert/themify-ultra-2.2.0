@@ -588,7 +588,7 @@ function themify_required_plugins_modal( $required_plugins, $skin = '' ) {
 	}
 	if( ! empty( $required_plugins ) && ! themify_are_plugins_active( wp_list_pluck( $required_plugins, 'path' ) ) ) {
 		$all_plugins = get_plugins();
-		$output .= '<div class="required-addons themify-modal" style="display: none;" data-skin="' . $skin . '">';
+		$output .= '<div aria-label="required addons for theme" class="required-addons themify-modal" style="display: none;" data-skin="' . $skin . '">';
 			$output .= '<p>' . __( 'This demo requires these plugins/addons:', 'themify' ) . '</p>';
 			$output .= '<ul>';
 			foreach( $required_plugins as $plugin ) {

@@ -1128,7 +1128,7 @@ class Themify_Builder_Layouts_Provider_Pre_Designed extends Themify_Builder_Layo
 					<li><a href="#" class="all"><?php _e( 'All', 'themify' ); ?></a></li>
 				</ul>
 			</div>
-			<div id="tb_load_layout_error" style="display: none;">
+			<div aria-label="themify builder load layout error" id="tb_load_layout_error" style="display: none;">
 				<?php _e( 'There was an error in load layouts, please make sure your internet is connected and check if Themify site is available.', 'themify' ); ?>
 			</div>
 		</div>

@@ -21,7 +21,7 @@ if ( ! is_wp_error( $categories ) ) {
 	<?php themify_post_start(); //hook ?>
 
     <?php if($themify->unlink_title!='yes' || $themify->unlink_image!='yes'):?>
-        <a href="<?php echo themify_get_featured_image_link(); ?>" data-post-permalink="yes" style="display: none;"></a>
+        <a aria-label="show or hide permalink for portfolio" href="<?php echo themify_get_featured_image_link(); ?>" data-post-permalink="yes" style="display: none;"></a>
     <?php endif;?>
 
 	<?php if ( themify_loop_is_singular( 'portfolio' ) ) : ?>

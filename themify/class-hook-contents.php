@@ -362,7 +362,7 @@ class Themify_Hooks {
 
 	public function get_visibility_dialog() {
 		$output = '
-			<div id="themify_lightbox_visibility" class="themify-admin-lightbox clearfix" style="display: none;">
+			<div aria-label="lightbox" id="themify_lightbox_visibility" class="themify-admin-lightbox clearfix" style="display: none;">
 				<h3 class="themify_lightbox_title">' . __( 'Condition', 'themify' ) . '</h3>
 				<a href="#" class="close_lightbox"><i class="ti-close"></i></a>
 				<div class="lightbox_container">

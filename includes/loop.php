@@ -17,7 +17,7 @@ global $themify; ?>
 	<?php themify_post_start(); // hook ?>
 
     <?php if($themify->unlink_title!='yes' || $themify->unlink_image!='yes'):?>
-        <a href="<?php echo themify_get_featured_image_link(); ?>" data-post-permalink="yes" style="display: none;"></a>
+        <a aria-label="show or hide permalink" href="<?php echo themify_get_featured_image_link(); ?>" data-post-permalink="yes" style="display: none;"></a>
     <?php endif;?>
 
 	<?php if( 'below' != $themify->media_position ) get_template_part( 'includes/post-media', 'loop'); ?>

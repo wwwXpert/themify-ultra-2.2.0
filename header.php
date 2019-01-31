@@ -30,7 +30,7 @@
 			<?php themify_header_before(); // hook ?>
                         <?php if($show_menu_navigation):?>
                             <div class="header-icons">
-                                <a id="menu-icon" href="#mobile-menu"><span class="menu-icon-inner"></span></a>
+                                <a aria-label="mobile menu icon" id="menu-icon" href="#mobile-menu"><span class="menu-icon-inner"></span></a>
                             </div>
                         <?php endif;?>
 
@@ -62,7 +62,7 @@
 
 									<?php if ( themify_theme_show_area( 'rss' ) ) : ?>
 										<div class="rss">
-											<a href="<?php echo esc_url( themify_get( 'setting-custom_feed_url' ) != '' ? themify_get( 'setting-custom_feed_url' ) : get_bloginfo( 'rss2_url' ) ); ?>"></a>
+											<a aria-label="rss feed" href="<?php echo esc_url( themify_get( 'setting-custom_feed_url' ) != '' ? themify_get( 'setting-custom_feed_url' ) : get_bloginfo( 'rss2_url' ) ); ?>"></a>
 										</div>
 									<?php endif; // exclude RSS ?>
 								</div>
@@ -70,7 +70,7 @@
 							<?php endif; // exclude social widget or RSS icon ?>
 
 							<?php if ( themify_theme_show_area( 'search_form' ) ) : ?>
-								<a class="search-button" href="#"></a>
+								<a aria-label="search button" class="search-button" href="#"></a>
 								<!-- /searchform-wrap -->
 							<?php endif; // exclude search form ?>
 
@@ -107,7 +107,7 @@
 							<!-- /header-widgets -->
 						<?php endif; // exclude header widgets ?>
 
-						<a id="menu-icon-close" href="#"></a>
+						<a aria-label="menu icon close" id="menu-icon-close" href="#"></a>
 					</div>
 					<!-- /#mobile-menu -->
 				<?php endif; // do not exclude all this ?>

@@ -476,7 +476,7 @@ if ( ! class_exists( 'Themify_Builder_Options' ) ) {
 		 */
 		public function builder_clear_cache() {
 			$pre = $this->current_tab . '_';
-			$out='<div style="display: none" data-show-if-element=".builder-disable-cache:checked" data-show-if-value="enable" data-sync-row-el="th">';
+			$out='<div aria-label="show data if builder disabled cache" style="display: none" data-show-if-element=".builder-disable-cache:checked" data-show-if-value="enable" data-sync-row-el="th">';
 			$expire =  isset( $this->option_value[$pre.'cache_expiry'] )?$this->option_value[$pre.'cache_expiry']:'';
 			$expire = $expire>0?(int)$expire:2;
 			$out.=sprintf('<input type="text" class="width2" value="%s" name="%s" />  &nbsp;&nbsp;<span>%s</span>',

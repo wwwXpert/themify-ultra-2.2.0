@@ -16,7 +16,7 @@ if (empty($settings['thumbnail_gallery'])) {
 $thumbnail = themify_get_image("ignore=true&src={$settings['thumbnail_gallery']}&w={$settings['thumb_w_gallery']}&h={$settings['thumb_h_gallery']}&alt={$alt}");
 foreach ($settings['gallery_images'] as $key => $image):
     ?>
-    <dl class="gallery-item"<?php if($key!==0):?> style="display: none;"<?php endif;?>>
+    <dl aria-label="gallery item" class="gallery-item"<?php if($key!==0):?> style="display: none;"<?php endif;?>>
         <?php
         $link = wp_get_attachment_url($image->ID);
         $img = wp_get_attachment_image_src($image->ID, 'full');

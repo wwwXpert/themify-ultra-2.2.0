@@ -1437,7 +1437,7 @@ if (!class_exists('Themify_Builder')) :
                 </div>
             </script>
             <?php if( Themify_Builder_Model::is_gutenberg_editor() ): ?>
-                <div style="display: none;"><?php wp_editor( ' ', 'tb_lb_hidden_editor' );?></div>
+                <div aria-label="hidden editor" style="display: none;"><?php wp_editor( ' ', 'tb_lb_hidden_editor' );?></div>
             <?php endif; ?>
         <?php
         }

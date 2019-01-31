@@ -32,7 +32,7 @@ if( themify_theme_show_area( 'footer_widgets' ) ) {
 							themify_footer_start(); // hook
 							
 							if ( themify_theme_show_area( 'footer_back' ) ) {
-								printf( '<div class="back-top clearfix %s"><div class="arrow-up"><a href="#header"></a></div></div>'
+								printf( '<div class="back-top clearfix %s"><div class="arrow-up"><a aria-label="go to top of page" href="#header"></a></div></div>'
 									, themify_check( 'setting-use_float_back' ) ? 'back-top-float back-top-hide' : '' );
 
 							}

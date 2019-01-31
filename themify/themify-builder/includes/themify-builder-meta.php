@@ -21,7 +21,7 @@ global $post;
 	</div>
 	<!-- /tb_row_panel -->
 
-	<div style="display: none;">
+	<div aria-label="hidden editor" style="display: none;">
 		<?php
 			wp_editor( ' ', 'tb_lb_hidden_editor' );
 		?>
